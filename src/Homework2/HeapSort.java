@@ -13,6 +13,11 @@ public class HeapSort {
         Ex01.printArr(array);
 
     }
+
+    /**
+     * @apiNote Пирамидальная сортировка
+     * @param array заданный массив
+     */
     public static void sortHeap(int[] array) {
         for (int i = array.length /2 - 1; i >= 0; i--)
             heapify(array, array.length, i);
