@@ -45,7 +45,7 @@ public class RedBlackTree {
             if (node.value > value) { //если значение текущей ноды больше, чем добавляемое, то мы запускаем рекурсивный поиск по левому ребёнку
                 if (node.leftChild != null) { //если левая нода существует
                     boolean result = addNode(node.leftChild, value);
-//                    node.leftChild = rebalance(node.leftChild);
+                    node.leftChild = rebalance(node.leftChild);
                     return result;
                 } else { //если левой ноды не существует, то создаем новую
                     node.leftChild = new Node();
